@@ -17,11 +17,10 @@ end
 
 def fizzbuzz(number)
   if number != 0
-  if is_divisible_by_15?(number) then return "fizzbuzz"
-  elsif is_divisible_by_3?(number) then return "fizz"
-  elsif is_divisible_by_5?(number) then return "buzz"
-  else return number
-  end
+  return "fizzbuzz" if is_divisible_by_15?(number)
+  return "fizz" if is_divisible_by_3?(number)
+  return "buzz" if is_divisible_by_5?(number)
+  number
   else return number
   end
 end
